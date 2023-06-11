@@ -1,0 +1,12 @@
+#Write an SQL query to report the movies with an odd-numbered ID and a description that is not "boring".
+#Return the result table ordered by rating in descending order.
+
+#All the details from the table needs to be fetched where the description is not boring so description != 'boring' and the id should be odd number 
+#thus condition id % 2 != 0.
+#The result should be in descending order of rating thus order by rating desc.
+
+# Write your MySQL query statement below
+select * 
+from cinema
+where description != 'boring' and id % 2 != 0
+order by rating desc;
